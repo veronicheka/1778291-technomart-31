@@ -72,8 +72,10 @@
             <legend>Цена:</legend>
             <h3>Цена:</h3>
             <div>
-              <input type="number" value="0" min="0" max="50000" name="price-min">
-              <input type="number" value="30000" min="30000" max="50000" name="price-max">
+              <input type="number" value="0" min="0" max="50000" name="price-min" id="price-min">
+              <label for="price-min">Введите минимальную цену</label>
+              <input type="number" value="30000" min="30000" max="50000" name="price-max" id="price-max">
+              <label for="price-max">Введите максимальную цену</label>
             </div>
           </fieldset>
           <fieldset>
@@ -279,28 +281,28 @@
   </main>
   <footer>
     <div>
-      <a><img src="https://via.placeholder.com/220x68" alt="Логотип Техномарт"></a>
-      <ul>
-        <li><a href="blank.html">Компания</a></li>
-        <li><a href="blank.html">Новости</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="blank.html">Доставка</a></li>
-        <li><a href="blank.html">Контакты</a></li>
-      </ul>
+      <div>
+        <a><img src="https://via.placeholder.com/220x68" alt="Логотип Техномарт"></a>
+        <ul>
+          <li><a href="blank.html">Компания</a></li>
+          <li><a href="blank.html">Новости</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="blank.html">Доставка</a></li>
+          <li><a href="blank.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
+          <a href="tel:+78005558628">+7 (800) 555-86-28</a>
+        </p>
+        <ul>
+          <li><a href="blank.html">Материалы</a></li>
+          <li><a href="blank.html">Техника</a></li>
+          <li><a href="blank.html">Инструмент</a></li>
+          <li><a href="blank.html">Спецпредложения</a></li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
-        <a href="tel:+78005558628">+7 (800) 555-86-28</a>
-      </p>
-      <ul>
-        <li><a href="blank.html">Материалы</a></li>
-        <li><a href="blank.html">Техника</a></li>
-        <li><a href="blank.html">Инструмент</a></li>
-        <li><a href="blank.html">Спецпредложения</a></li>
-      </ul>
-    </div>
-  </footer>
-  <footer>
     <div>
       <p>
         © 2010–2021 Компания «Техномарт»<br>
@@ -336,11 +338,13 @@
     </div>
   </footer>
 
-  <aside>
+  <section>
     <h2>Товар добавлен в корзину!</h2>
-    <footer>
+    <div>
       <a href="blank.html">Оформить заказ</a>
+    </div>
+    <div>
       <a href="catalog.html">Продолжить покупки</a>
-    </footer>
-  </aside>
+    </div>
+  </section>
 </body>
