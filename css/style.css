@@ -1,0 +1,377 @@
+:root {
+  --basic-red: #ee3643;
+  --basic-extra-dark: #293449;
+  --basic-green: #63a63e;
+  --basic-dark: #32425c;
+  --basic-extra-light: #f9f5f0;
+  --background: #3d546f;
+  --basic-greylight: #c5c5c5;
+  --basic-background: #f1f5f7;
+  --error: #ba2732;
+  --basic-white: #ffffff;
+  --basic-black: #000000;
+
+  --special-yellow: #ffbf47;
+  --special-blue: #3BBCE3;
+  --special-violet: #DC91D8;
+  --special-green: #8ED78F;
+  --special-grey: #A9A9A9;
+  --special-light: #F3F7F9;
+  --special-extra-yellow: #FFD180;
+
+}
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-white);
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  background-color: var(--basic-red);
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-white);
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.main-header {
+  background-color: var(--basic-background);
+}
+
+.header-top {
+  background-color: var(--basic-extra-dark);
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.container {
+  margin: 0 auto;
+  width: 940px;
+}
+
+.header-logo {
+  display: inline-block;
+  background-color: var(--basic-red);
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+
+.header-logo:hover,
+.header-logo:focus {
+  background-color: var(--basic-red);
+}
+
+.header-logo:active {
+  background-color: var(--error);
+}
+
+.search {
+  background-color: transparent;
+  border: none;
+  font: inherit;
+  color: var(--basic-white);
+}
+
+.header-menu {
+  list-style: none;
+}
+
+.header-menu-link {
+  color: inherit;
+}
+
+.button-order {
+  background-color: var(--basic-green);
+  padding: 9px;
+  padding-left: 19px;
+  padding-right: 16px;
+  color: inherit;
+}
+
+.info-line {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--basic-red);
+}
+
+.contacts-phone {
+  border: 3px solid var(--basic-white);
+  color: var(--basic-red);
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+}
+
+.address {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--basic-dark);
+}
+
+.login-list {
+  list-style: none;
+}
+
+.login-link {
+  background-color: var(--basic-white);
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+}
+
+.site-navigation {
+  background-color: var(--basic-dark);
+  box-shadow: inset 0px -5px 0px var(--basic-extra-dark);
+}
+
+.site-navigation-list {
+  list-style: none;
+}
+
+.site-navigation-link {
+  color: var(--basic-white);
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.features-item {
+  width: 300px;
+  height: 123px;
+  color: var(--basic-white);
+
+}
+
+.features-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.features-link {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  background-image: url(/img/clearbtn.svg);
+}
+.button-catalog {
+    padding: 46px;
+    padding-top: 11px;
+    padding-bottom: 9px;
+}
+.material {
+  background-color: var(--special-yellow);
+}
+
+.instrument {
+  background-color: var(--special-blue);
+}
+
+.technique {
+  background-color: var(--special-violet);
+}
+
+.sale {
+  background-color: var(--special-green);
+}
+
+.delivery {
+  background-color: var(--special-yellow);
+}
+
+.popular-headline {
+  background-color: var(--basic-extra-light);
+}
+
+.popular-title {
+  color: var(--basic-dark);
+  font-size: 30px;
+  line-height: 30px;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.button-product {
+  padding: 24px;
+  padding-top: 11px;
+  padding-bottom: 9px;
+}
+
+.product-link {
+  color: var(--basic-black);
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.product-price {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+
+}
+
+.old-price {
+  color: var(--special-grey);
+  text-decoration-line: line-through;
+}
+
+.new-price {
+  color: var(--basic-white);
+  background-image: url("/img/Shape.png");
+}
+
+.button-vendor {
+  padding-top: 11px;
+  padding-bottom: 9px;
+  padding-left: 39px;
+  padding-right: 38px;
+}
+
+.store-service {
+  background-color: var(--basic-background);
+}
+
+.store-title {
+  color: var(--basic-black);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.store-text {
+  font-family: "PT Sans", Arial, sans-serif;
+  color: var(--basic-black);
+}
+
+.service-list {
+  list-style: none;
+}
+
+.service-page-title {
+  color: var(--basic-dark);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.button-credit {
+  padding: 10px;
+  padding-left: 45px;
+  padding-right: 44px;
+}
+
+.partnership-list {
+  list-style: none;
+}
+
+.partnership-item {
+  color: var(--basic-black);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.button-info {
+  padding: 40px;
+  padding-top: 11px;
+  padding-bottom: 9px;
+}
+
+.button-contact {
+  padding-left: 62px;
+  padding-right: 61px;
+  padding-top: 11px;
+  padding-bottom: 9px;
+}
+
+.footer-info {
+  background-color: var(--basic-dark);
+}
+
+.footer-logo {
+  display: inline-block;
+  background-color: var(--basic-red);
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+
+.footer-logo:hover,
+.footer-logo:focus {
+  background-color: var(--basic-red);
+}
+
+.footer-logo:active {
+  background-color: var(--error);
+}
+
+.footer-navigation-list {
+  list-style: none;
+}
+
+.footer-navigation-item {
+  color: var(--basic-background);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-contacts {
+  color: var(--special-light);
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-features-list {
+  list-style: none;
+}
+
+.footer-features-item {
+  color: var(--special-extra-yellow);
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-feedback {
+  background-color: var(--basic-extra-dark);
+}
+
+.info-text {
+  color: var(--basic-white);
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.info-link {
+  color: var(--special-extra-yellow);
+}
+
+.footer-social-list {
+  list-style: none;
+}
