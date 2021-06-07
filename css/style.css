@@ -170,7 +170,7 @@ a {
   line-height: 18px;
   color: var(--basic-white);
   text-transform: uppercase;
-  background-image: url(../css/images/clearbtn.svg);
+  background-image: url(../img/clearbtn.svg);
 }
 
 .button-catalog {
@@ -243,7 +243,7 @@ a {
 
 .new-price {
   color: var(--basic-white);
-  background-image: url("../css/images/price.png");
+  background-image: url("../img/price.png");
   background-repeat: no-repeat;
   padding: 10px 44px 10px 32px;
 }
@@ -389,7 +389,7 @@ a {
   padding: 9px 23px 9px 47px;
 }
 .user-block-top {
-  background-image: url(../css/images/profile.svg);
+  background-image: url(../img/profile.svg);
   background-repeat: no-repeat;
   padding: 12px;
   padding-left: 56px;
