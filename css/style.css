@@ -607,6 +607,8 @@ a {
 .service-page {
   background-color: var(--basic-background);
   margin-top: 70px;
+  padding-top: 64px;
+  padding-bottom: 54px;
 }
 
 .page-title {
@@ -633,6 +635,7 @@ a {
 .service-wrapper {
   display: flex;
   flex-direction: row;
+  margin-top: 21px;
 }
 
 .service-list {
@@ -664,6 +667,7 @@ a {
 
 .service-page-wrapper {
   display: none;
+  margin-left: 80px;
 }
 
 .service-page-wrapper.active {
