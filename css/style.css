@@ -517,6 +517,7 @@ a {
   margin-top: 20px;
   border: 1px solid var(--special-light-border);
   box-sizing: border-box;
+  margin: 0;
 }
 
 .product-card-img {
@@ -749,8 +750,6 @@ a {
 .main-footer {
   background-color: var(--basic-dark);
 
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
 }
 
 .footer-info {
@@ -873,19 +872,10 @@ a {
   background-color: var(--basic-red);
 }
 
-.user-block-top {
-  display: inline-block;
-  background-image: url("../img/profile.svg");
-  background-repeat: no-repeat;
-  width: 299px;
-  height: 45px;
-}
-
 .user-name {
-  color: var(--basic-black);
-  font-size: 21px;
-  line-height: 21px;
-  text-align: center;
+  padding: 12px;
+  padding-left: 56px;
+  padding-right: 57px;
 }
 
 .user-block-bottom {
@@ -905,6 +895,11 @@ a {
   margin: 0;
   margin-top: 21px;
   list-style: none;
+}
+
+.breadcrumbs-nav {
+  padding-right: 17px;
+  padding-left: 17px;
 }
 
 .breadcrumbs-item {
@@ -938,11 +933,15 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .filter-header {
   background-color: var(--special-filter);
-  padding: 10px 0px;
+  padding: 10px;
+  padding-left: 18px;
+  padding-right: 151px;
+  align-items: center;
 }
 
 .filter-header-title {
@@ -960,11 +959,95 @@ a {
   display: flex;
   flex-direction: row;
   background-color: var(--special-filter);
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 14px;
+  align-items: center;
+}
+
+.sort-list {
+  display: flex;
+  margin-left: 140px;
+}
+
+.sort-item {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: none;
+  padding: 0;
+}
+
+.sort-price {
+  color: var(--basic-red);
+}
+
+.sort-type,
+.sort-function {
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.sort-type {
+  margin-left: 70px;
+}
+
+.sort-function {
+  margin-left: 65px;
+}
+
+.sort-direction {
+  margin-left: 46px;
+}
+
+.button-direction-up {
+  background-image: url("../img/icon-up-dir.svg");
+  background-repeat: no-repeat;
+  width: 11px;
+  height: 10px;
+  border: none;
+}
+
+.button-direction-down {
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+  width: 11px;
+  height: 10px;
+  border: none;
+  margin-left: 21px;
 }
 
 .main-catalog {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
+}
+
+.catalog-filter {
+  margin-top: 14px;
+}
+
+.filter fieldset {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 0;
+  padding-bottom: 25px;
+  margin-top: 16px;
+}
+
+.filter fieldset:first-child {
+  margin-top: 0;
+}
+
+.filter fieldset:last-child {
+  margin-bottom: 34px;
+  border-bottom: none;
+  /* вроде как не сработало в браузере */
 }
 
 .filter-title {
@@ -975,6 +1058,58 @@ a {
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.filter ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.price-control {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-label input {
+  width: 95px;
+  min-height: 38px;
+  background-color: var(--special-filter);
+  border: none;
+  border-radius: 2px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.price-label input::placeholder {
+  color: var(--basic-black);
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.filter-checkbox {
+  margin-bottom: 20px;
+}
+
+.filter-checkbox:last-child {
+  margin-bottom: 0;
+}
+
+.filter-radio {
+  margin-bottom: 22px;
+}
+
+.filter-radio:last-child {
+  margin-bottom: 0;
 }
 
 .filter-vendor-item {
@@ -1024,12 +1159,17 @@ a {
   height: 100%;
 }
 
+.catalog-products {
+  margin-top: 20px;
+}
+
 .catalog-product-card {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
   row-gap: 18px;
 }
+
 
 .page-number-list {
   display: flex;
