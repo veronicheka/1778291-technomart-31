@@ -941,7 +941,7 @@ a {
   padding: 10px;
   padding-left: 18px;
   padding-right: 151px;
-  align-items: center;
+
 }
 
 .filter-header-title {
@@ -1030,7 +1030,6 @@ a {
 .catalog-filter {
   margin-top: 14px;
 }
-
 .filter fieldset {
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -1042,12 +1041,13 @@ a {
 
 .filter fieldset:first-child {
   margin-top: 0;
+  border-bottom: none;
 }
 
 .filter fieldset:last-child {
   margin-bottom: 34px;
   border-bottom: none;
-  /* вроде как не сработало в браузере */
+  /* не отображается в браузере */
 }
 
 .filter-title {
