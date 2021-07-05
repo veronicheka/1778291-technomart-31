@@ -267,15 +267,15 @@
                     <!-- Доработать выпадающие кнопки -->
                     <ul class="service-list">
                         <li class="service-item">
-                            <button class="service-button button-delivery" data-slide="0"
+                            <button class="service-button button-service-current" data-slide="0"
                                 type="button">Доставка</button>
                         </li>
                         <li class="service-item">
-                            <button class="service-button button-guarantee" data-slide="1"
+                            <button class="service-button" data-slide="1"
                                 type="button">Гарантия</button>
                         </li>
                         <li class="service-item">
-                            <button class="service-button button-loan" data-slide="2" type="button">Кредит</button>
+                            <button class="service-button" data-slide="2" type="button">Кредит</button>
                         </li>
                     </ul>
                     <div class="service-page-wrapper active">
@@ -419,39 +419,43 @@
         </div>
     </footer>
 
-    <section class="modal-map">
+    <section class="modal modal-map visually-hidden">
         <h2>Как до нас добраться</h2>
         <!-- Здесь будет карта -->
         <button class="modal-close" type="button">Закрыть</button>
     </section>
-    <div class="modal-container">
-        <section class="modal-feedback">
-            <h2>Обратная связь</h2>
-            <form class="modal-form" action="#" method="POST" name="feedback">
-                <div>
-                    <div>
-                        <p class="modal-item">
-                            <label class="modal-name" for="feedback-name">Ваше имя:</label>
+    <section class="modal modal-feedback visually-hidden">
+        <h2 class="visually-hidden">Обратная связь</h2>
+        <form class="modal-form" action="#" method="POST" name="feedback">
+            <div class="modal-form-wrapper">
+                <div class="modal-info">
+                    <div class="modal-item">
+                        <label class="modal-name" for="feedback-name">
+                            <span>Ваше имя:</span>
                             <input class="modal-name" type="text" name="name" id="feedback-name"
-                                placeholder="Имя Фамилия">
-                        </p>
-                        <p class="modal-item">
-                            <label class="modal-email" for="feedback-email">Ваш e-mail:</label>
-                            <input class="modal-email" type="email" name="email" id="feedback-email"
-                                placeholder="email@example.com">
-                        </p>
+                                placeholder="Имя Фамилия"></label>
                     </div>
-                    <p class="modal-item">
-                        <label class="modal-message" for="feedback-message">Текст письма:</label>
-                        <textarea class="modal-message" name="message" id="feedback-message" cols="30" rows="6"
-                            placeholder="В свободной форме:"></textarea>
-                    </p>
+                    <div class="modal-item">
+                        <label class="modal-email" for="feedback-email">
+                            <span>Ваш e-mail:</span>
+                            <input class="modal-email" type="email" name="email" id="feedback-email"
+                                placeholder="email@example.com"></label>
+                    </div>
                 </div>
-                <button class="button" type="submit">Отправить</button>
-            </form>
-            <button class="modal-close" type="button">Закрыть</button>
-        </section>
-    </div>
+                <div class="modal-item">
+                    <label class="modal-message" for="feedback-message">
+                        <span>Текст письма:</span>
+                        <textarea class="modal-message" name="message" id="feedback-message" cols="30" rows="6"
+                            placeholder="В свободной форме:"></textarea></label>
+                </div>
+            </div>
+            <div class="send-feedback">
+                <button class="button button-feedback" type="submit">Отправить</button>
+            </div>
+        </form>
+
+        <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </section>
 </body>
 
 </html>
