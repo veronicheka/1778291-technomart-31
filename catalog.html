@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -97,13 +97,13 @@
   <main class="main-catalog-page">
     <div class="container">
       <ul class="breadcrumbs-list">
-        <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="index.html"></a><svg width="14" height="12"
-            viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M2 7.99999V12H6V7.99999H8V12H12V7.99999L7 3.51599L2 7.99999Z" fill="#C1C6CE" />
-            <path
-              d="M13.831 6.365L12 4.751V0H10V2.987L7.33201 0.635C7.31201 0.618 7.28901 0.612 7.26801 0.598C7.24297 0.579705 7.21617 0.56396 7.18801 0.551C7.15711 0.540195 7.12532 0.532163 7.09301 0.527C7.06201 0.521 7.03201 0.515 7.00001 0.515C6.96901 0.515 6.93901 0.521 6.90801 0.527C6.87554 0.531919 6.84369 0.5403 6.81301 0.552C6.78501 0.563 6.76001 0.581 6.73301 0.598C6.71201 0.612 6.68801 0.618 6.66901 0.635L0.171006 6.365C0.0162706 6.50291 -0.0375648 6.72187 0.0355779 6.9158C0.108721 7.10974 0.293738 7.23862 0.501006 7.24C0.622937 7.24035 0.740742 7.19586 0.832006 7.115L7.00001 1.677L13.169 7.115C13.3778 7.27913 13.6784 7.25178 13.8542 7.05265C14.03 6.85352 14.0198 6.55183 13.831 6.365Z"
-              fill="#C1C6CE" />
-          </svg>
+        <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="index.html" aria-label="Главная"><svg width="14" height="12"
+              viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 7.99999V12H6V7.99999H8V12H12V7.99999L7 3.51599L2 7.99999Z" fill="#C1C6CE" />
+              <path
+                d="M13.831 6.365L12 4.751V0H10V2.987L7.33201 0.635C7.31201 0.618 7.28901 0.612 7.26801 0.598C7.24297 0.579705 7.21617 0.56396 7.18801 0.551C7.15711 0.540195 7.12532 0.532163 7.09301 0.527C7.06201 0.521 7.03201 0.515 7.00001 0.515C6.96901 0.515 6.93901 0.521 6.90801 0.527C6.87554 0.531919 6.84369 0.5403 6.81301 0.552C6.78501 0.563 6.76001 0.581 6.73301 0.598C6.71201 0.612 6.68801 0.618 6.66901 0.635L0.171006 6.365C0.0162706 6.50291 -0.0375648 6.72187 0.0355779 6.9158C0.108721 7.10974 0.293738 7.23862 0.501006 7.24C0.622937 7.24035 0.740742 7.19586 0.832006 7.115L7.00001 1.677L13.169 7.115C13.3778 7.27913 13.6784 7.25178 13.8542 7.05265C14.03 6.85352 14.0198 6.55183 13.831 6.365Z"
+                fill="#C1C6CE" />
+            </svg></a>
         </li>
         <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="catalog.html">Каталог</a></li>
         <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="blank.html">Инструмент</a></li>
@@ -124,8 +124,8 @@
             <button class="sort-item sort-function" type="button">По функционалу</button>
           </div>
           <div class="sort-direction">
-            <button class="button-direction button-direction-up button-direction-current" type="button"><svg width="11" height="10"
-                viewBox="0 0 11 10" fill="#C5C5C5" xmlns="http://www.w3.org/2000/svg">
+            <button class="button-direction button-direction-up button-direction-current" type="button"><svg width="11"
+                height="10" viewBox="0 0 11 10" fill="#C5C5C5" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.5 0L11 10L0 10" />
               </svg>
             </button>
@@ -184,7 +184,8 @@
                   <label class="filter-vendor-item" for="dewalt">Dewalt</label>
                 </li>
                 <li class="filter-option filter-checkbox">
-                  <input class="filter-vendor-checkbox visually-hidden" id="hitachi" type="checkbox" name="hitachi">
+                  <input class="filter-vendor-checkbox visually-hidden" id="hitachi" type="checkbox" name="hitachi"
+                    disabled>
                   <label class="filter-vendor-item" for="hitachi">Hitachi</label>
                 </li>
               </ul>
@@ -198,11 +199,13 @@
                   <label class="filter-supply-item" for="accumulator">Аккумуляторные</label>
                 </li>
                 <li class="filter-option filter-radio">
-                  <input class="filter-supply-radio visually-hidden" id="net" type="radio" name="power" value="net">
+                  <input class="filter-supply-radio visually-hidden" id="net" type="radio" name="power" value="net"
+                    disabled>
                   <label class="filter-supply-item" for="net">Сетевые</label>
                 </li>
               </ul>
             </fieldset>
+            <!-- форма с ссылкой -->
             <button class="button-filter" type="submit">Показать</button>
           </form>
         </section>
@@ -440,7 +443,7 @@
   <footer class="main-footer">
     <div class=" container footer-info">
       <div class="footer-row">
-        <a class="footer-logo"><img src="img/logotip.svg" width="220" height="68" alt="Логотип Техномарт"></a>
+        <a class="footer-logo"><img src="img/logo-technomart.svg" width="137" height="22" alt="Логотип Техномарт"></a>
         <ul class="footer-navigation-list">
           <li class="footer-navigation-item"><a class="footer-navigation-link" href="blank.html">Компания</a>
           </li>
@@ -513,14 +516,22 @@
     </div>
   </footer>
 
-  <section class="modal">
+  <section class="modal modal-basket">
+    <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M33 66C51.2254 66 66 51.2254 66 33C66 14.7746 51.2254 0 33 0C14.7746 0 0 14.7746 0 33C0 51.2254 14.7746 66 33 66Z"
+        fill="#63A63E" />
+      <path
+        d="M49.641 21.066C49.2498 20.6773 48.6181 20.6773 48.227 21.066L29.788 39.504C29.3968 39.8928 28.7651 39.8928 28.374 39.504L20.234 31.365C19.8428 30.9763 19.2111 30.9763 18.82 31.365L15.285 34.9C14.8962 35.2912 14.8962 35.9228 15.285 36.314L28.374 49.404C28.7651 49.7928 29.3968 49.7928 29.788 49.404L33.324 45.868L34.738 44.454L53.176 26.016C53.5647 25.6248 53.5647 24.9932 53.176 24.602L49.641 21.066Z"
+        fill="white" />
+    </svg>
+
     <h2>Товар добавлен в корзину!</h2>
-    <div>
-      <a href="blank.html">Оформить заказ</a>
+    <div class="modal-button-basket">
+      <a class="button button-arrange" href="blank.html">Оформить заказ</a>
+      <a class="button button-shop" href="catalog.html">Продолжить покупки</a>
     </div>
-    <div>
-      <a href="catalog.html">Продолжить покупки</a>
-    </div>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 
 </body>
