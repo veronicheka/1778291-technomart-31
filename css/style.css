@@ -362,8 +362,12 @@ a {
   margin: 0;
 }
 
+.menu-account {
+  display: flex;
+  align-items: flex-start;
+}
+
 .menu-account a {
-  display: inline-block;
   background-color: var(--basic-white);
   font-size: 21px;
   line-height: 21px;
@@ -1459,6 +1463,7 @@ a {
 }
 
 .user-name {
+  width: 299px;
   padding: 12px;
   padding-left: 56px;
   padding-right: 57px;
@@ -1474,14 +1479,17 @@ a {
 }
 
 .user-logout {
+  align-items: center;
   position: relative;
+  margin-right: 14px;
+
 }
 
 .user-logout svg {
   position: absolute;
   width: 20px;
   height: 17px;
-  top: -14px;
+  top: 14px;
   right: 17px;
 }
 
@@ -1619,6 +1627,7 @@ a {
 }
 
 .filter-header-title {
+  word-wrap: wrap;
   color: var(--basic-black);
   font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
@@ -1694,6 +1703,7 @@ a {
 }
 
 .sort-direction {
+  flex-shrink: 0;
   margin-left: 46px;
 }
 
@@ -1887,6 +1897,10 @@ a {
 
 /* Checkbox */
 
+.filter-checkbox:last-child {
+  margin-bottom: 0
+}
+
 .filter-vendor-checkbox+label::before {
   content: "";
   position: absolute;
@@ -1937,6 +1951,11 @@ a {
 }
 
 /* Radio */
+
+.filter-radio:last-child {
+  margin-bottom: 0;
+}
+
 .filter-supply-radio+label::before {
   content: "";
   position: absolute;
@@ -2007,6 +2026,7 @@ a {
 }
 
 .button-filter {
+  width: 220px;
   background: var(--basic-white);
   border: 1px solid var(--special-border);
   box-sizing: border-box;
@@ -2017,7 +2037,7 @@ a {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
-  padding: 10px 79px 10px 79px;
+  padding: 10px 0;
 }
 
 .catalog-page {
