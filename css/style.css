@@ -124,6 +124,7 @@ a {
   max-height: 42px;
   background-color: var(--basic-red);
   position: relative;
+  cursor: pointer;
 }
 
 .header-logo::before {
@@ -136,7 +137,8 @@ a {
   height: 5px;
   transform: translateY(100%);
   background-color: var(--basic-red);
-  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24)
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
 }
 
 .header-logo:hover,
@@ -953,6 +955,7 @@ a {
   padding-bottom: 17px;
   padding-left: 22px;
   box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+  cursor: pointer;
 }
 
 .service-button:hover,
@@ -1624,6 +1627,7 @@ a {
   padding-top: 14px;
   padding-left: 18px;
   padding-right: 151px;
+  border-radius: 5px;
 }
 
 .filter-header-title {
@@ -1649,6 +1653,7 @@ a {
   padding-right: 14px;
   align-items: center;
   position: relative;
+  border-radius: 5px;
 }
 
 .sort-list {
@@ -1666,6 +1671,7 @@ a {
   border: none;
   padding: 0;
   background: none;
+  cursor: pointer;
 }
 
 .sort-price {
@@ -1711,6 +1717,7 @@ a {
   border: none;
   padding: 0;
   background: none;
+  cursor: pointer;
 }
 
 .button-direction-up svg {
@@ -2038,6 +2045,16 @@ a {
   line-height: 18px;
   text-transform: uppercase;
   padding: 10px 0;
+  cursor: pointer;
+}
+
+.button-filter:hover,
+.button-filter:focus {
+  border: 1px solid var(--basic-greylight);
+}
+
+.button-filter:active {
+  border: 1px solid var(--basic-red);
 }
 
 .catalog-page {
@@ -2106,6 +2123,7 @@ a {
   margin-left: 41px;
   margin-right: 44px;
   border: none;
+  cursor: pointer;
 }
 
 .purchase-button {
