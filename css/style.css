@@ -1935,6 +1935,7 @@ a {
 .filter-vendor-checkbox:disabled+label {
   opacity: 0.4;
 }
+
 /* Radio */
 .filter-supply-radio+label::before {
   content: "";
@@ -2072,7 +2073,9 @@ a {
 }
 
 .button-actions {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 135px;
   height: 38px;
   font-style: normal;
@@ -2082,6 +2085,7 @@ a {
   text-transform: uppercase;
   margin-left: 41px;
   margin-right: 44px;
+  border: none;
 }
 
 .purchase-button {
@@ -2091,15 +2095,13 @@ a {
   border-radius: 2px;
   margin-bottom: 10px;
   margin-top: 38px;
-  padding-top: 10px;
-  padding-left: 53px;
   position: relative;
 }
 
 .purchase-button svg {
   width: 15px;
   height: 15px;
-  left: 30px;
+  left: 25px;
   top: 10px;
   position: absolute;
   opacity: 0.3;
@@ -2120,9 +2122,6 @@ a {
   background: var(--basic-white);
   border: 3px solid var(--basic-green);
   border-radius: 2px;
-  padding-top: 9px;
-  padding-bottom: 9px;
-  padding-left: 33px;
 }
 
 .in-bookmarks-button:hover,
