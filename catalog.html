@@ -5,8 +5,10 @@
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
   <link rel="icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
@@ -54,10 +56,10 @@
     </div>
     <div class="header-middle">
       <div class="container header-middle-container">
-        <p class="menu-info">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        <p class="menu-info">Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
         <div class="menu-contacts">
           <a class="contacts-phone" href="tel:+78005558628">
-            <span>+7 (800) 555-86-28</span></a>
+            <span>+7 800 555-86-28</span></a>
           <p class="address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
         </div>
         <div class="user-block">
@@ -139,7 +141,8 @@
               </svg>
             </button>
             <button class="button-direction button-direction-down" type="button">
-              <svg aria-hidden="true" focusable="false" width="12" height="10" viewBox="0 0 12 10" fill="#C5C5C5" xmlns="http://www.w3.org/2000/svg">
+              <svg aria-hidden="true" focusable="false" width="12" height="10" viewBox="0 0 12 10" fill="#C5C5C5"
+                xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.66241 10L0.162415 0H11.1624" />
               </svg>
             </button>
@@ -148,7 +151,8 @@
       </div>
       <div class="main-catalog">
         <section class="catalog-filter">
-          <form class="filter" method="get" action="https://echo.htmlacademy.ru" method="get" name="filter" target="_blank">
+          <h2 class="visually-hidden">Фильтр</h2>
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru" name="filter" target="_blank">
             <fieldset class="filter-price">
               <legend class="filter-title">Цена:</legend>
               <div class="range-filter">
@@ -159,7 +163,8 @@
                     </div>
                   </div>
                   <button class="toggle toggle-min" style="left: 0;" aria-label="Выбрать минимальную цену"></button>
-                  <button class="toggle toggle-max" style="left: 142px;" aria-label="Выбрать максимальную цену"></button>
+                  <button class="toggle toggle-max" style="left: 142px;"
+                    aria-label="Выбрать максимальную цену"></button>
                 </div>
                 <div class="price-controls">
                   <label class="price-min" for="price-min" aria-label="Выбрать минимальную цену">
@@ -212,15 +217,16 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button-filter" type="submit" >Показать</button>
+            <button class="button-filter" type="submit">Показать</button>
           </form>
         </section>
         <section class="catalog-products">
           <ul class="catalog-product-card">
-            <li class="product-card-item">
+            <li class="product-card-item" tabindex="0">
               <div class="product-card-actions">
-                <button class="button-actions purchase-button"  aria-label="Купить Перфоратор BOSCH BFG 6000">
-                  <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <button class="button-actions purchase-button" aria-label="Купить Перфоратор BOSCH BFG 6000">
+                  <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="white"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" />
                     <path
@@ -228,7 +234,8 @@
                     <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" />
                   </svg>
                   Купить</button>
-                <button class="button-actions in-bookmarks-button" aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">В закладки</button>
+                <button class="button-actions in-bookmarks-button"
+                  aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">В закладки</button>
               </div>
               <a class="product-link" href="">
                 <h3>
@@ -240,10 +247,11 @@
               <div class="product-price old-price">30500 Р.</div>
               <div class="product-price new-price">25500 Р.</div>
             </li>
-            <li class="product-card-item">
+            <li class="product-card-item" tabindex="0">
               <div class="product-card-actions">
                 <button class="button-actions purchase-button" aria-label="Купить Перфоратор BOSCH BFG 6000">
-                  <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="white" xmlns="http://www.w3.org/2000/svg">
+                  <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="white"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" />
                     <path
@@ -251,7 +259,8 @@
                     <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" />
                   </svg>
                   Купить</button>
-                <button class="button-actions in-bookmarks-button" aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">В закладки</button>
+                <button class="button-actions in-bookmarks-button"
+                  aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">В закладки</button>
               </div>
               <a class="product-link" href="">
                 <h3>
@@ -263,10 +272,11 @@
               <div class="product-price old-price">30500 Р.</div>
               <div class="product-price new-price">25500 Р.</div>
             </li>
-            <li class="product-card-item product-card-new">
+            <li class="product-card-item product-card-new" tabindex="0">
               <div class="product-card-actions">
                 <button class="button-actions purchase-button" aria-label="Купить Перфоратор BOSCH BFG 6000">
-                  <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="white" xmlns="http://www.w3.org/2000/svg">
+                  <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="white"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" />
                     <path
@@ -274,7 +284,8 @@
                     <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" />
                   </svg>
                   Купить</button>
-                <button class="button-actions in-bookmarks-button" aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">В закладки</button>
+                <button class="button-actions in-bookmarks-button"
+                  aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">В закладки</button>
               </div>
               <a class="product-link" href="">
                 <h3>
@@ -286,7 +297,7 @@
               <div class="product-price old-price">30500 Р.</div>
               <div class="product-price new-price">25500 Р.</div>
             </li>
-            <li class="product-card-item product-card-new">
+            <li class="product-card-item product-card-new" tabindex="0">
               <div class="product-card-actions">
                 <button class="button-actions purchase-button" aria-label="Купить Перфоратор BOSCH BFG 3000">
                   <svg width="15" height="15" viewBox="0 0 15 15" fill="white" xmlns="http://www.w3.org/2000/svg">
@@ -297,7 +308,8 @@
                     <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" />
                   </svg>
                   Купить</button>
-                <button class="button-actions in-bookmarks-button" aria-label="Добавить Перфоратор BOSCH BFG 3000 в закладки">В закладки</button>
+                <button class="button-actions in-bookmarks-button"
+                  aria-label="Добавить Перфоратор BOSCH BFG 3000 в закладки">В закладки</button>
               </div>
               <a class="product-link" href="">
                 <h3>
@@ -309,10 +321,11 @@
               <div class="product-price old-price">22500 Р.</div>
               <div class="product-price new-price">15500 Р.</div>
             </li>
-            <li class="product-card-item">
+            <li class="product-card-item" tabindex="0">
               <div class="product-card-actions">
                 <button class="button-actions purchase-button" aria-label="Купить Перфоратор BOSCH BFG 6000">
-                  <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="white" xmlns="http://www.w3.org/2000/svg">
+                  <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="white"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" />
                     <path
@@ -320,7 +333,8 @@
                     <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" />
                   </svg>
                   Купить</button>
-                <button class="button-actions in-bookmarks-button" aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">В закладки</button>
+                <button class="button-actions in-bookmarks-button"
+                  aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">В закладки</button>
               </div>
               <a class="product-link" href="">
                 <h3>
@@ -332,10 +346,11 @@
               <div class="product-price old-price">30500 Р.</div>
               <div class="product-price new-price">25500 Р.</div>
             </li>
-            <li class="product-card-item product-card-new">
+            <li class="product-card-item product-card-new" tabindex="0">
               <div class="product-card-actions">
                 <button class="button-actions purchase-button" aria-label="Купить Перфоратор BOSCH BFG 2000">
-                  <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="white" xmlns="http://www.w3.org/2000/svg">
+                  <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="white"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" />
                     <path
@@ -343,7 +358,8 @@
                     <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" />
                   </svg>
                   Купить</button>
-                <button class="button-actions in-bookmarks-button" aria-label="Добавить Перфоратор BOSCH BFG 2000 в закладки">В закладки</button>
+                <button class="button-actions in-bookmarks-button"
+                  aria-label="Добавить Перфоратор BOSCH BFG 2000 в закладки">В закладки</button>
               </div>
               <a class="product-link" href="">
                 <h3>
@@ -365,7 +381,8 @@
                     <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" />
                   </svg>
                   Купить</button>
-                <button class="button-actions in-bookmarks-button" aria-label="Добавить Перфоратор BOSCH BFG 3000 в закладки">В закладки</button>
+                <button class="button-actions in-bookmarks-button"
+                  aria-label="Добавить Перфоратор BOSCH BFG 3000 в закладки">В закладки</button>
               </div>
               <a class="product-link" href="">
                 <h3>
@@ -377,10 +394,11 @@
               <div class="product-price old-price">22500 Р.</div>
               <div class="product-price new-price">15500 Р.</div>
             </li>
-            <li class="product-card-item">
+            <li class="product-card-item" tabindex="0">
               <div class="product-card-actions">
                 <button class="button-actions purchase-button" aria-label="Купить Перфоратор BOSCH BFG 6000">
-                  <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="white" xmlns="http://www.w3.org/2000/svg">
+                  <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="white"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" />
                     <path
@@ -388,7 +406,8 @@
                     <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" />
                   </svg>
                   Купить</button>
-                <button class="button-actions in-bookmarks-button" aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">В закладки</button>
+                <button class="button-actions in-bookmarks-button"
+                  aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">В закладки</button>
               </div>
               <a class="product-link" href="">
                 <h3>
@@ -400,10 +419,11 @@
               <div class="product-price old-price">30500 Р.</div>
               <div class="product-price new-price">25500 Р.</div>
             </li>
-            <li class="product-card-item product-card-new">
+            <li class="product-card-item product-card-new" tabindex="0">
               <div class="product-card-actions">
                 <button class="button-actions purchase-button" aria-label="Купить Перфоратор BOSCH BFG 2000">
-                  <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="white" xmlns="http://www.w3.org/2000/svg">
+                  <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="white"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" />
                     <path
@@ -411,7 +431,8 @@
                     <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" />
                   </svg>
                   Купить</button>
-                <button class="button-actions in-bookmarks-button" aria-label="Добавить Перфоратор BOSCH BFG 2000 в закладки">В закладки</button>
+                <button class="button-actions in-bookmarks-button"
+                  aria-label="Добавить Перфоратор BOSCH BFG 2000 в закладки">В закладки</button>
               </div>
               <a class="product-link" href="">
                 <h3>
@@ -449,7 +470,8 @@
   <footer class="main-footer">
     <div class=" container footer-info">
       <div class="footer-row">
-        <a class="footer-logo" href="index.html"><img src="img/logo-technomart.svg" width="137" height="22" alt="Логотип Техномарт"></a>
+        <a class="footer-logo" href="index.html"><img src="img/logo-technomart.svg" width="137" height="22"
+            alt="Логотип Техномарт"></a>
         <ul class="footer-navigation-list">
           <li class="footer-navigation-item"><a class="footer-navigation-link" href="blank.html">Компания</a>
           </li>
@@ -484,7 +506,8 @@
           <ul class="footer-social-list">
             <li>
               <a class="social-button" href="">
-                <svg role="img" aria-label="Логотип Вконтакте" width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg role="img" aria-label="Логотип Вконтакте" width="26" height="15" viewBox="0 0 26 15" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M15.5403 11.7284C16.4609 11.4387 17.6395 13.6409 18.8943 14.4837C19.836 15.1221 20.5573 14.9843 20.5573 14.9843L23.9017 14.9374C23.9017 14.9374 25.6495 14.8324 24.8232 13.4805C24.7549 13.368 24.3389 12.4784 22.334 10.6474C20.2376 8.73211 20.5217 9.04242 23.0456 5.73117C24.5835 3.71273 25.1988 2.47992 25.0062 1.95492C24.8213 1.44961 23.6918 1.58086 23.6918 1.58086L19.9237 1.60617C19.5568 1.60711 19.2458 1.71773 19.1042 2.08898C19.1013 2.09273 18.5062 3.65086 17.7127 4.97555C16.0362 7.77773 15.3669 7.9268 15.0896 7.75148C14.4531 7.34555 14.6139 6.12305 14.6139 5.25398C14.6139 2.53805 15.0299 1.40555 13.7992 1.11305C13.388 1.01555 13.0876 0.951796 12.0389 0.942421C10.6985 0.922733 9.56027 0.942421 8.91508 1.25086C8.48656 1.45992 8.15819 1.91836 8.35753 1.94461C8.6079 1.97742 9.1693 2.09461 9.46975 2.49398C9.8559 3.01148 9.84434 4.17117 9.84434 4.17117C9.84434 4.17117 10.0649 7.36898 9.32434 7.76555C8.8159 8.03742 8.12064 7.48242 6.62516 4.93805C5.86153 3.6368 5.28471 2.19867 5.28471 2.19867C5.28471 2.19867 5.17301 1.93148 4.97079 1.78523C4.73005 1.6118 4.39301 1.55648 4.39301 1.55648L0.816563 1.57898C0.816563 1.57898 0.27923 1.59398 0.0818227 1.82461C-0.0934366 2.02898 0.0673782 2.45086 0.0673782 2.45086C0.0673782 2.45086 2.86864 8.9018 6.04064 12.1512C8.94879 15.1343 12.2537 14.9365 12.2537 14.9365H13.7511C13.7511 14.9365 14.2027 14.8859 14.4338 14.644C14.6495 14.419 14.6399 13.9962 14.6399 13.9962C14.6399 13.9962 14.61 12.019 15.5403 11.7284Z"
                     fill="white" />
@@ -494,14 +517,16 @@
             </li>
             <li>
               <a class="social-button" href="">
-                <svg role="img" aria-label="Логотип Facebook" width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg role="img" aria-label="Логотип Facebook" width="12" height="22" viewBox="0 0 12 22" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white" />
                 </svg>
               </a>
             </li>
             <li>
               <a class="social-button" href="">
-                <svg role="img" aria-label="Логотип Instagram" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg role="img" aria-label="Логотип Instagram" width="21" height="21" viewBox="0 0 21 21" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z"
                     fill="white" />
@@ -522,22 +547,24 @@
     </div>
   </footer>
 
-  <section class="modal modal-basket">
-    <svg aria-hidden="true" focusable="false" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M33 66C51.2254 66 66 51.2254 66 33C66 14.7746 51.2254 0 33 0C14.7746 0 0 14.7746 0 33C0 51.2254 14.7746 66 33 66Z"
-        fill="#63A63E" />
-      <path
-        d="M49.641 21.066C49.2498 20.6773 48.6181 20.6773 48.227 21.066L29.788 39.504C29.3968 39.8928 28.7651 39.8928 28.374 39.504L20.234 31.365C19.8428 30.9763 19.2111 30.9763 18.82 31.365L15.285 34.9C14.8962 35.2912 14.8962 35.9228 15.285 36.314L28.374 49.404C28.7651 49.7928 29.3968 49.7928 29.788 49.404L33.324 45.868L34.738 44.454L53.176 26.016C53.5647 25.6248 53.5647 24.9932 53.176 24.602L49.641 21.066Z"
-        fill="white" />
-    </svg>
-
-    <h2>Товар добавлен в корзину!</h2>
-    <div class="modal-button-basket">
-      <a class="button button-arrange" href="blank.html">Оформить заказ</a>
-      <a class="button button-shop" href="catalog.html">Продолжить покупки</a>
+  <section class="modal">
+    <div class="modal-content modal-basket">
+      <svg aria-hidden="true" focusable="false" width="66" height="66" viewBox="0 0 66 66" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M33 66C51.2254 66 66 51.2254 66 33C66 14.7746 51.2254 0 33 0C14.7746 0 0 14.7746 0 33C0 51.2254 14.7746 66 33 66Z"
+          fill="#63A63E" />
+        <path
+          d="M49.641 21.066C49.2498 20.6773 48.6181 20.6773 48.227 21.066L29.788 39.504C29.3968 39.8928 28.7651 39.8928 28.374 39.504L20.234 31.365C19.8428 30.9763 19.2111 30.9763 18.82 31.365L15.285 34.9C14.8962 35.2912 14.8962 35.9228 15.285 36.314L28.374 49.404C28.7651 49.7928 29.3968 49.7928 29.788 49.404L33.324 45.868L34.738 44.454L53.176 26.016C53.5647 25.6248 53.5647 24.9932 53.176 24.602L49.641 21.066Z"
+          fill="white" />
+      </svg>
+      <h2>Товар добавлен в корзину!</h2>
+      <div class="modal-button-basket">
+        <a class="button button-arrange" href="blank.html">Оформить заказ</a>
+        <a class="button button-shop" href="catalog.html">Продолжить покупки</a>
+      </div>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </div>
-    <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 
 </body>

@@ -320,11 +320,12 @@ a {
 
 .header-middle-container {
   display: flex;
-  justify-content: space-between;
+  padding-left: 30px;
 }
 
 .menu-info {
   width: 197px;
+  font-weight: normal;
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
@@ -332,12 +333,17 @@ a {
   margin: 0;
 }
 
+.menu-contacts {
+  width: 270px;
+  margin-left: 93px;
+}
+
 .contacts-phone::before {
   content: "";
   position: absolute;
-  top: 13px;
-  left: 40px;
-  width: 18px;
+  top: 10px;
+  left: 37px;
+  width: 17px;
   height: 19px;
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
@@ -345,16 +351,19 @@ a {
 }
 
 .contacts-phone {
-  display: inline-block;
+  display: flex;
   border: 3px solid var(--basic-white);
-  color: var(--basic-red);
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 30px;
-  padding: 7px 45px 8px 74px;
+  padding: 7px 47px 5px 71px;
   position: relative;
 }
 
+.contacts-phone span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--basic-red);
+}
 
 .address {
   font-size: 14px;
@@ -367,6 +376,7 @@ a {
 .menu-account {
   display: flex;
   align-items: flex-start;
+  margin-left: auto;
 }
 
 .menu-account a {
@@ -563,15 +573,15 @@ a {
 
 .slider-prev {
   position: absolute;
-  top: 114px;
-  left: 25px;
+  top: 122px;
+  left: 20px;
   cursor: pointer;
 }
 
 .slider-next {
   position: absolute;
-  top: 114px;
-  right: 20px;
+  top: 122px;
+  right: 17px;
   cursor: pointer;
   background: none;
   border: none;
@@ -742,6 +752,15 @@ a {
   padding-bottom: 9px;
 }
 
+.button-product:hover,
+.button-product:focus {
+  background-color: var(--special-red);
+}
+
+.button-product:active {
+  background-color: var(--error);
+}
+
 .product-card-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -846,6 +865,15 @@ a {
   padding: 11px 38px 9px 39px;
 }
 
+.button-vendor:hover,
+.button-vendor:focus {
+  background-color: var(--special-red);
+}
+
+.button-vendor:active {
+  background-color: var(--error);
+}
+
 .vendor-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -859,27 +887,26 @@ a {
   background-color: var(--basic-white);
   width: 220px;
   height: 145px;
-  position: relative;
-  border: 1px solid var(--special-light-border);
-  box-sizing: border-box;
 }
 
-.vendor-item:hover,
-.vendor-item:focus {
+.vendor-item a:hover,
+.vendor-item a:focus {
   box-shadow: 0 10px 25px var(--special-light-border);
 }
 
-.vendor-item:active {
+.vendor-item a:active {
   box-shadow: 0 4px 10px var(--special-light-border);
   opacity: 0.3;
 }
 
-
-.vendor-item img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.vendor-item a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--special-light-border);
+  box-sizing: border-box;
 }
 
 /* Service */
@@ -887,7 +914,7 @@ a {
 .service-page {
   background-color: var(--basic-background);
   margin-top: 70px;
-  padding-top: 64px;
+  padding-top: 70px;
   padding-bottom: 54px;
 }
 
@@ -1062,6 +1089,7 @@ a {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-top: 4px;
 }
 
 .partnership-item::before {
@@ -1091,7 +1119,15 @@ a {
   padding-top: 11px;
   padding-bottom: 9px;
   margin-top: 8px;
+}
 
+.button-info:hover,
+.button-info:focus {
+  background-color: var(--special-red);
+}
+
+.button-info:active {
+  background-color: var(--error);
 }
 
 /* Contacts */
@@ -1099,7 +1135,7 @@ a {
 .contacts {
   display: flex;
   flex-direction: column;
-  margin-top: 74px;
+  margin-top: 70px;
   margin-bottom: 70px;
 }
 
@@ -1113,7 +1149,16 @@ a {
   padding-right: 61px;
   padding-top: 11px;
   padding-bottom: 9px;
-  margin-top: 25px;
+  margin-top: 19px;
+}
+
+.button-contact:hover,
+.button-contact:focus {
+  background-color: var(--special-red);
+}
+
+.button-contact:active {
+  background-color: var(--error);
 }
 
 /* Footer */
@@ -1328,13 +1373,21 @@ a {
   left: 0;
   display: none;
   margin: auto;
-  color: var(--basic-black);
-  background-color: var(--basic-white);
+  z-index: 999;
+}
+
+.modal-opened {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
   background-position: 0 0;
   background-repeat: repeat;
   box-shadow: 0px 20px 40px rgba(41, 52, 73, 0.75);
   border-top: 7px solid var(--basic-red);
-  z-index: 999;
+  position: relative;
 }
 
 /*Modal close  */
@@ -1356,8 +1409,9 @@ a {
 /* Modal feedback */
 
 .modal-feedback {
-  bottom: 352px;
   width: 620px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
 }
 
 .modal-form {
@@ -1446,7 +1500,6 @@ a {
 .modal-map {
   width: 940px;
   height: 449px;
-  border-top: 7px solid var(--basic-red);
 }
 
 .modal-map img {
@@ -1463,6 +1516,10 @@ a {
 
 .basket-link {
   background-color: var(--basic-red);
+}
+
+.user-block {
+  margin-left: auto;
 }
 
 .user-name {
@@ -1916,8 +1973,8 @@ a {
   border-radius: 3px;
 }
 
-.filter-vendor-checkbox+label:hover::before,
-.filter-vendor-checkbox+label:focus::before {
+.filter-vendor-checkbox:hover+label::before,
+.filter-vendor-checkbox:focus+label::before {
   border: 2px solid var(--special-input);
 }
 
@@ -1941,8 +1998,8 @@ a {
   background-position: 0 0;
 }
 
-.filter-vendor-checkbox:checked+label:hover::after,
-.filter-vendor-checkbox:checked+label:focus::after {
+.filter-vendor-checkbox:checked:hover+label::after,
+.filter-vendor-checkbox:checked:focus+label::after {
   background-image: url("../img/checkbox-on.svg");
 }
 
@@ -1971,8 +2028,8 @@ a {
   border-radius: 50%;
 }
 
-.filter-supply-radio+label:hover::before,
-.filter-supply-radio+label:focus::before {
+.filter-supply-radio:hover~label::before,
+.filter-supply-radio:focus~label::before {
   border: 4px solid var(--special-input);
 }
 
@@ -1995,8 +2052,8 @@ a {
   border-radius: 50%;
 }
 
-.filter-supply-radio:checked+label:hover::after,
-.filter-supply-radio:checked+label:focus::after {
+.filter-supply-radio:checked:hover~label::after,
+.filter-supply-radio:checked:focus~label::after {
   background-color: var(--special-input);
 }
 
@@ -2143,12 +2200,12 @@ a {
   color: var(--basic-white);
 }
 
-.purchase-button:hover,
-.purchase-button:focus {
+.purchase-button:hover .product-card-actions,
+.purchase-button:focus .product-card-actions {
   background-color: var(--special-order-green);
 }
 
-.purchase-button:active {
+.purchase-button:active .product-card-actions {
   background-color: var(--special-dark-green);
 }
 
@@ -2234,6 +2291,7 @@ a {
 .modal-basket {
   width: 620px;
   height: 282px;
+  background-color: var(--basic-white);
 }
 
 .modal-basket h2 {
