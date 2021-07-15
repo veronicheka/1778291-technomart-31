@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
+    <link href="js/script.min.js" rel="stylesheet">
 </head>
 
 <body>
@@ -23,7 +24,8 @@
                 </a>
                 <div class="header-menu">
                     <form class="menu-search" action="#" method="post">
-                        <input class="search-input" type="search" name="search-holder" placeholder="Поиск:">
+                        <label сlass="visually-hidden" for="search"></label>
+                        <input class="search-input" type="search" name="search-holder" id="search" placeholder="Поиск:">
                         <button class="button-search" type="submit" name="button-submit">
                             <svg aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 17 17"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -132,7 +134,6 @@
                                 fill="white" />
                         </svg>
                     </li>
-                    <!-- Доработать слайды -->
                     <li class="slider">
                         <ul class="slider-list">
                             <li class="slider-item slide-1">
@@ -211,7 +212,22 @@
                     <a class="button button-product" href="blank.html">Все популярные товары</a>
                 </div>
                 <ul class="product-card-list">
-                    <li class="product-card-item">
+                    <li class="product-card-item" tabindex="0">
+                        <div class="product-card-actions">
+                            <a class="button-actions purchase-button" href="blank.html"
+                                aria-label="Купить Перфоратор BOSCH BFG 6000">
+                                <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15"
+                                    fill="white" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" />
+                                    <path
+                                        d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" />
+                                    <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" />
+                                </svg>
+                                Купить</a>
+                            <a class="button-actions in-bookmarks-button" href="blank.html"
+                                aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">В закладки</a>
+                        </div>
                         <a class="product-link" href="">
                             <h3>
                                 <span class="product-title">Перфоратор BOSCH BFG 9000</span>
@@ -222,7 +238,22 @@
                         <div class="product-price old-price">32500 Р.</div>
                         <div class="product-price new-price">25500 Р.</div>
                     </li>
-                    <li class="product-card-item product-card-new">
+                    <li class="product-card-item product-card-new" tabindex="0">
+                        <div class="product-card-actions">
+                            <a class="button-actions purchase-button" href="blank.html"
+                                aria-label="Купить Перфоратор BOSCH BFG 6000">
+                                <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15"
+                                    fill="white" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" />
+                                    <path
+                                        d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" />
+                                    <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" />
+                                </svg>
+                                Купить</a>
+                            <a class="button-actions in-bookmarks-button" href="blank.html"
+                                aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">В закладки</a>
+                        </div>
                         <a class="product-link" href="">
                             <h3>
                                 <span class="product-title">Перфоратор BOSCH BFG 3000</span>
@@ -233,7 +264,22 @@
                         <div class="product-price old-price">22500 Р.</div>
                         <div class="product-price new-price">15500 Р.</div>
                     </li>
-                    <li class="product-card-item">
+                    <li class="product-card-item" tabindex="0">
+                        <div class="product-card-actions">
+                            <a class="button-actions purchase-button" href="blank.html"
+                                aria-label="Купить Перфоратор BOSCH BFG 6000">
+                                <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15"
+                                    fill="white" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" />
+                                    <path
+                                        d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" />
+                                    <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" />
+                                </svg>
+                                Купить</a>
+                            <a class="button-actions in-bookmarks-button" href="blank.html"
+                                aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">В закладки</a>
+                        </div>
                         <a class="product-link" href="">
                             <h3>
                                 <span class="product-title">Перфоратор BOSCH BFG 6000</span>
@@ -244,7 +290,22 @@
                         <div class="product-price old-price">30500 Р.</div>
                         <div class="product-price new-price">25500 Р.</div>
                     </li>
-                    <li class="product-card-item product-card-new">
+                    <li class="product-card-item product-card-new" tabindex="0">
+                        <div class="product-card-actions">
+                            <a class="button-actions purchase-button" href="blank.html"
+                                aria-label="Купить Перфоратор BOSCH BFG 6000">
+                                <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15"
+                                    fill="white" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" />
+                                    <path
+                                        d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" />
+                                    <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" />
+                                </svg>
+                                Купить</a>
+                            <a class="button-actions in-bookmarks-button" href="blank.html"
+                                aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">В закладки</a>
+                        </div>
                         <a class="product-link" href="">
                             <h3>
                                 <span class="product-title">Перфоратор BOSCH BFG 2000</span>
@@ -357,10 +418,10 @@
         <div class="container columns">
             <section class="store-info">
                 <h2 class="page-title">Компания «Техномарт»</h2>
-                <p class="page-text">
+                <p class="page-text store-page-text">
                     Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства
                     не оставит равнодушными любителей сэкономить на гастарбайтерах.
-                </p><br>
+                </p>
                 <p class="page-text">Мы можем доставить ваш товар в самые отдаленные точки России!<br> Техномарт
                     работает со
                     многими транспортными компаниями:
@@ -405,7 +466,7 @@
                 </ul>
             </div>
             <div class="footer-row">
-                <p class="footer-contacts">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
+                <p class="footer-contacts">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
                     <a class="footer-phone" href="tel:+78005558628">+7 (800) 555-86-28</a>
                 </p>
                 <ul class="footer-features-list">
@@ -459,11 +520,11 @@
                     </ul>
                 </div>
                 <p class="info-text footer-email">
-                    Обратная связь:<br>
+                    Обратная связь:
                     <a class="info-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                 </p>
                 <p class="info-text footer-copyright">
-                    Разработано —<br>
+                    Разработано —
                     <a class="info-link" href="https://htmlacademy.ru/intensive/htmlcss"
                         target="_blank">htmlacademy.ru</a>
                 </p>
@@ -471,48 +532,36 @@
         </div>
     </footer>
 
-    <section class="modal">
-        <div class="modal-content modal-map">
-            <h2 class="visually-hidden">Как до нас добраться</h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8226084133141!2d30.315220216079428!3d59.96826598188697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sus!4v1625481592055!5m2!1sru!2sus"
-                width="940" height="449" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            <button class="modal-close" type="button" aria-label="Закрыть"></button>
-        </div>
+    <section class="modal modal-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8226084133141!2d30.315220216079428!3d59.96826598188697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sus!4v1625481592055!5m2!1sru!2sus"
+            width="940" height="449" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
 
-    <section class="modal">
-        <div class="modal-content modal-feedback">
-            <h2 class="visually-hidden">Обратная связь</h2>
-            <form class="modal-form" action="#" method="POST" name="feedback">
-                <div class="modal-form-wrapper">
-                    <div class="modal-info">
-                        <div class="modal-item">
-                            <label class="modal-name" for="feedback-name">
-                                <span>Ваше имя:</span>
-                                <input class="modal-name" type="text" name="name" id="feedback-name"
-                                    placeholder="Имя Фамилия"></label>
-                        </div>
-                        <div class="modal-item">
-                            <label class="modal-email" for="feedback-email">
-                                <span>Ваш e-mail:</span>
-                                <input class="modal-email" type="email" name="email" id="feedback-email"
-                                    placeholder="email@example.com"></label>
-                        </div>
-                    </div>
-                    <div class="modal-item">
-                        <label class="modal-message" for="feedback-message">
-                            <span>Текст письма:</span>
-                            <textarea class="modal-message" name="message" id="feedback-message" cols="30" rows="6"
-                                placeholder="В свободной форме:"></textarea></label>
-                    </div>
+    <section class="modal modal-feedback">
+        <h2 class="visually-hidden">Обратная связь</h2>
+        <form class="modal-form" action="#" method="POST" name="feedback">
+            <div class="modal-form-wrapper">
+                <div class="modal-info">
+                    <label class="modal-name" for="feedback-name">
+                        Ваше имя:
+                        <input class="modal-name" type="text" name="name" id="feedback-name"
+                            placeholder="Имя Фамилия"></label>
+                    <label class="modal-email" for="feedback-email">
+                        Ваш e-mail:
+                        <input class="modal-email" type="email" name="email" id="feedback-email"
+                            placeholder="email@example.com"></label>
                 </div>
-                <div class="send-feedback">
-                    <button class="button button-feedback" type="submit">Отправить</button>
-                </div>
-            </form>
-            <button class="modal-close" type="button" aria-label="Закрыть"></button>
-        </div>
+                <label class="modal-message" for="feedback-message">
+                    Текст письма:
+                    <textarea name="message" id="feedback-message" cols="30" rows="6"
+                        placeholder="В свободной форме:"></textarea></label>
+            </div>
+            <button class="button button-feedback" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
 </body>
 

@@ -23,7 +23,8 @@
         </a>
         <div class="header-menu">
           <form class="menu-search" action="#" method="post">
-            <input class="search-input" type="search" name="search-holder" placeholder="Поиск:">
+            <label class="visually-hidden" for="search"></label>
+            <input class="search-input" type="search" name="search-holder" id="search" placeholder="Поиск:">
             <button class="button-search" type="submit" name="button-submit">
               <svg aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 17 17" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -134,18 +135,18 @@
             <button class="sort-item sort-function" type="button">По функционалу</button>
           </div>
           <div class="sort-direction">
-            <button class="button-direction button-direction-up button-direction-current" type="button">
+            <a class="button-direction button-direction-up button-direction-current" href="blank.html">
               <svg aria-hidden="true" focusable="false" width="11" height="10" viewBox="0 0 11 10" fill="#C5C5C5"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.5 0L11 10L0 10" />
               </svg>
-            </button>
-            <button class="button-direction button-direction-down" type="button">
+            </a>
+            <a class="button-direction button-direction-down" href="blank.html">
               <svg aria-hidden="true" focusable="false" width="12" height="10" viewBox="0 0 12 10" fill="#C5C5C5"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.66241 10L0.162415 0H11.1624" />
               </svg>
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -224,7 +225,8 @@
           <ul class="catalog-product-card">
             <li class="product-card-item" tabindex="0">
               <div class="product-card-actions">
-                <button class="button-actions purchase-button" aria-label="Купить Перфоратор BOSCH BFG 6000">
+                <a class="button-actions purchase-button" href="blank.html"
+                  aria-label="Купить Перфоратор BOSCH BFG 6000">
                   <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="white"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -233,9 +235,9 @@
                       d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" />
                     <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" />
                   </svg>
-                  Купить</button>
-                <button class="button-actions in-bookmarks-button"
-                  aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">В закладки</button>
+                  Купить</a>
+                <a class="button-actions in-bookmarks-button" href="blank.html"
+                  aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">В закладки</a>
               </div>
               <a class="product-link" href="">
                 <h3>
@@ -244,12 +246,13 @@
                 <img class="product-card-img" src="img/catalog/catalog-1.jpg" width="127" height="112"
                   alt="Перфоратор BOSCHBFG 6000">
               </a>
-              <div class="product-price old-price">30500 Р.</div>
-              <div class="product-price new-price">25500 Р.</div>
+              <p class="product-price old-price">30500 Р.</p>
+              <p class="product-price new-price">25500 Р.</p>
             </li>
             <li class="product-card-item" tabindex="0">
               <div class="product-card-actions">
-                <button class="button-actions purchase-button" aria-label="Купить Перфоратор BOSCH BFG 6000">
+                <a class="button-actions purchase-button" href="blank.html"
+                  aria-label="Купить Перфоратор BOSCH BFG 6000">
                   <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="white"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -258,9 +261,9 @@
                       d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" />
                     <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" />
                   </svg>
-                  Купить</button>
-                <button class="button-actions in-bookmarks-button"
-                  aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">В закладки</button>
+                  Купить</a>
+                <a class="button-actions in-bookmarks-button" href="blank.html"
+                  aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">В закладки</a>
               </div>
               <a class="product-link" href="">
                 <h3>
@@ -269,12 +272,13 @@
                 <img class="product-card-img" src="img/catalog/catalog-2.jpg" width="144" height="128"
                   alt="Перфоратор BOSCHBFG 6000">
               </a>
-              <div class="product-price old-price">30500 Р.</div>
-              <div class="product-price new-price">25500 Р.</div>
+              <p class="product-price old-price">30500 Р.</p>
+              <p class="product-price new-price">25500 Р.</p>
             </li>
             <li class="product-card-item product-card-new" tabindex="0">
               <div class="product-card-actions">
-                <button class="button-actions purchase-button" aria-label="Купить Перфоратор BOSCH BFG 6000">
+                <a class="button-actions purchase-button" href="blank.html"
+                  aria-label="Купить Перфоратор BOSCH BFG 6000">
                   <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="white"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -283,9 +287,9 @@
                       d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" />
                     <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" />
                   </svg>
-                  Купить</button>
-                <button class="button-actions in-bookmarks-button"
-                  aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">В закладки</button>
+                  Купить</a>
+                <a class="button-actions in-bookmarks-button" href="blank.html"
+                  aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">В закладки</a>
               </div>
               <a class="product-link" href="">
                 <h3>
@@ -294,22 +298,24 @@
                 <img class="product-card-img" src="img/catalog/catalog-3.jpg" width="127" height="112"
                   alt="Перфоратор BOSCHBFG 6000">
               </a>
-              <div class="product-price old-price">30500 Р.</div>
-              <div class="product-price new-price">25500 Р.</div>
+              <p class="product-price old-price">30500 Р.</p>
+              <p class="product-price new-price">25500 Р.</p>
             </li>
             <li class="product-card-item product-card-new" tabindex="0">
               <div class="product-card-actions">
-                <button class="button-actions purchase-button" aria-label="Купить Перфоратор BOSCH BFG 3000">
-                  <svg width="15" height="15" viewBox="0 0 15 15" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <a class="button-actions purchase-button" href="blank.html"
+                  aria-label="Купить Перфоратор BOSCH BFG 6000">
+                  <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="white"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" />
                     <path
                       d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" />
                     <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" />
                   </svg>
-                  Купить</button>
-                <button class="button-actions in-bookmarks-button"
-                  aria-label="Добавить Перфоратор BOSCH BFG 3000 в закладки">В закладки</button>
+                  Купить</a>
+                <a class="button-actions in-bookmarks-button" href="blank.html"
+                  aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">В закладки</a>
               </div>
               <a class="product-link" href="">
                 <h3>
@@ -318,12 +324,13 @@
                 <img class="product-card-img" src="img/catalog/catalog-4.jpg" width="127" height="112"
                   alt="Перфоратор BOSCHBFG 3000">
               </a>
-              <div class="product-price old-price">22500 Р.</div>
-              <div class="product-price new-price">15500 Р.</div>
+              <p class="product-price old-price">22500 Р.</p>
+              <p class="product-price new-price">15500 Р.</p>
             </li>
             <li class="product-card-item" tabindex="0">
               <div class="product-card-actions">
-                <button class="button-actions purchase-button" aria-label="Купить Перфоратор BOSCH BFG 6000">
+                <a class="button-actions purchase-button" href="blank.html"
+                  aria-label="Купить Перфоратор BOSCH BFG 6000">
                   <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="white"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -332,9 +339,9 @@
                       d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" />
                     <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" />
                   </svg>
-                  Купить</button>
-                <button class="button-actions in-bookmarks-button"
-                  aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">В закладки</button>
+                  Купить</a>
+                <a class="button-actions in-bookmarks-button" href="blank.html"
+                  aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">В закладки</a>
               </div>
               <a class="product-link" href="">
                 <h3>
@@ -343,12 +350,13 @@
                 <img class="product-card-img" src="img/catalog/catalog-5.jpg" width="144" height="128"
                   alt="Перфоратор BOSCHBFG 6000">
               </a>
-              <div class="product-price old-price">30500 Р.</div>
-              <div class="product-price new-price">25500 Р.</div>
+              <p class="product-price old-price">30500 Р.</p>
+              <p class="product-price new-price">25500 Р.</p>
             </li>
             <li class="product-card-item product-card-new" tabindex="0">
               <div class="product-card-actions">
-                <button class="button-actions purchase-button" aria-label="Купить Перфоратор BOSCH BFG 2000">
+                <a class="button-actions purchase-button" href="blank.html"
+                  aria-label="Купить Перфоратор BOSCH BFG 6000">
                   <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="white"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -357,9 +365,9 @@
                       d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" />
                     <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" />
                   </svg>
-                  Купить</button>
-                <button class="button-actions in-bookmarks-button"
-                  aria-label="Добавить Перфоратор BOSCH BFG 2000 в закладки">В закладки</button>
+                  Купить</a>
+                <a class="button-actions in-bookmarks-button" href="blank.html"
+                  aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">В закладки</a>
               </div>
               <a class="product-link" href="">
                 <h3>
@@ -368,21 +376,23 @@
                 <img class="product-card-img" src="img/catalog/catalog-6.jpg" width="127" height="112"
                   alt="Перфоратор BOSCHBFG 2000">
               </a>
-              <div class="product-price new-price">12500 Р.</div>
+              <p class="product-price new-price">12500 Р.</p>
             </li>
             <li class="product-card-item product-card-new">
               <div class="product-card-actions">
-                <button class="button-actions purchase-button" aria-label="Купить Перфоратор BOSCH BFG 3000">
-                  <svg width="15" height="15" viewBox="0 0 15 15" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <a class="button-actions purchase-button" href="blank.html"
+                  aria-label="Купить Перфоратор BOSCH BFG 6000">
+                  <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="white"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" />
                     <path
                       d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" />
                     <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" />
                   </svg>
-                  Купить</button>
-                <button class="button-actions in-bookmarks-button"
-                  aria-label="Добавить Перфоратор BOSCH BFG 3000 в закладки">В закладки</button>
+                  Купить</a>
+                <a class="button-actions in-bookmarks-button" href="blank.html"
+                  aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">В закладки</a>
               </div>
               <a class="product-link" href="">
                 <h3>
@@ -391,12 +401,13 @@
                 <img class="product-card-img" src="img/catalog/catalog-7.jpg" width="127" height="112"
                   alt="Перфоратор BOSCHBFG 3000">
               </a>
-              <div class="product-price old-price">22500 Р.</div>
-              <div class="product-price new-price">15500 Р.</div>
+              <p class="product-price old-price">22500 Р.</p>
+              <p class="product-price new-price">15500 Р.</p>
             </li>
             <li class="product-card-item" tabindex="0">
               <div class="product-card-actions">
-                <button class="button-actions purchase-button" aria-label="Купить Перфоратор BOSCH BFG 6000">
+                <a class="button-actions purchase-button" href="blank.html"
+                  aria-label="Купить Перфоратор BOSCH BFG 6000">
                   <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="white"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -405,9 +416,9 @@
                       d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" />
                     <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" />
                   </svg>
-                  Купить</button>
-                <button class="button-actions in-bookmarks-button"
-                  aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">В закладки</button>
+                  Купить</a>
+                <a class="button-actions in-bookmarks-button" href="blank.html"
+                  aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">В закладки</a>
               </div>
               <a class="product-link" href="">
                 <h3>
@@ -416,12 +427,13 @@
                 <img class="product-card-img" src="img/catalog/catalog-8.jpg" width="144" height="128"
                   alt="Перфоратор BOSCHBFG 6000">
               </a>
-              <div class="product-price old-price">30500 Р.</div>
-              <div class="product-price new-price">25500 Р.</div>
+              <p class="product-price old-price">30500 Р.</p>
+              <p class="product-price new-price">25500 Р.</p>
             </li>
             <li class="product-card-item product-card-new" tabindex="0">
               <div class="product-card-actions">
-                <button class="button-actions purchase-button" aria-label="Купить Перфоратор BOSCH BFG 2000">
+                <a class="button-actions purchase-button" href="blank.html"
+                  aria-label="Купить Перфоратор BOSCH BFG 6000">
                   <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="white"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -430,9 +442,9 @@
                       d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" />
                     <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" />
                   </svg>
-                  Купить</button>
-                <button class="button-actions in-bookmarks-button"
-                  aria-label="Добавить Перфоратор BOSCH BFG 2000 в закладки">В закладки</button>
+                  Купить</a>
+                <a class="button-actions in-bookmarks-button" href="blank.html"
+                  aria-label="Добавить Перфоратор BOSCH BFG 6000 в закладки">В закладки</a>
               </div>
               <a class="product-link" href="">
                 <h3>
@@ -441,7 +453,7 @@
                 <img class="product-card-img" src="img/catalog/catalog-9.jpg" width="127" height="112"
                   alt="Перфоратор BOSCHBFG 2000">
               </a>
-              <div class="product-price new-price">12500 Р.</div>
+              <p class="product-price new-price">12500 Р.</p>
             </li>
           </ul>
           <ul class="pagination-list">
@@ -486,7 +498,7 @@
         </ul>
       </div>
       <div class="footer-row">
-        <p class="footer-contacts">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
+        <p class="footer-contacts">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
           <a class="footer-phone" href="tel:+78005558628">+7 (800) 555-86-28</a>
         </p>
         <ul class="footer-features-list">
@@ -536,19 +548,18 @@
           </ul>
         </div>
         <p class="info-text footer-email">
-          Обратная связь:<br>
+          Обратная связь:
           <a class="info-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
         <p class="info-text footer-copyright">
-          Разработано —<br>
+          Разработано —
           <a class="info-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
         </p>
       </div>
     </div>
   </footer>
 
-  <section class="modal">
-    <div class="modal-content modal-basket">
+  <section class="modal modal-basket">
       <svg aria-hidden="true" focusable="false" width="66" height="66" viewBox="0 0 66 66" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <path
@@ -564,7 +575,6 @@
         <a class="button button-shop" href="catalog.html">Продолжить покупки</a>
       </div>
       <button class="modal-close" type="button" aria-label="Закрыть"></button>
-    </div>
   </section>
 
 </body>
