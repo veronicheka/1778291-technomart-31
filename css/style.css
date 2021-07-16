@@ -1025,6 +1025,10 @@ a {
   margin: 0;
 }
 
+.service-page-text {
+  width: 395px;
+}
+
 .service-wrapper {
   display: flex;
   margin-top: 70px;
@@ -1593,6 +1597,16 @@ a {
   top: 0;
   right: 0;
   margin: 37px 80px;
+  cursor: pointer;
+}
+
+.button-feedback:hover,
+.button-feedback:focus {
+  background-color: var(--special-red);
+}
+
+.button-feedback:active {
+  background-color: var(--error);
 }
 
 /* Modal map */
@@ -1718,7 +1732,6 @@ a {
 }
 
 .breadcrumbs-item {
-  display: inline;
   line-height: 18px;
   position: relative;
   margin-right: 41px;

@@ -58,3 +58,28 @@ window.addEventListener("keydown", function (evt) {
       }
     }
   });
+
+//   Modal Map
+
+const mapLink = document.querySelector(".contact-map");
+const mapPopup = document.querySelector(".modal-map");
+const mapClose = mapPopup.querySelector(".modal-close");
+
+mapLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.add("modal-opened");
+  });
+  
+  mapClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.remove("modal-opened");
+  });
+  
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      if (mapPopup.classList.contains("modal-opened")) {
+        evt.preventDefault();
+        mapPopup.classList.remove("modal-opened");
+      }
+    }
+  });
