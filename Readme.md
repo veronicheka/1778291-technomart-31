@@ -5,5 +5,5 @@
 
 # Ссылки
 
-* [Главная страница](file:///C:/Users/lobas/Documents/htmlacademy/1778291-technomart-31/index.html)
-* [Страница каталог товаров](file:///C:/Users/lobas/Documents/htmlacademy/1778291-technomart-31/catalog.html)
+* [Главная страница](https://veronicheka.github.io/1778291-technomart-31/index.html)
+* [Страница каталог товаров](https://veronicheka.github.io/1778291-technomart-31/catalog.html)
